@@ -1,0 +1,62 @@
+body{
+    width: 800px;
+    margin: 10px auto;
+}
+
+.cookie_history{
+    border: 1px solid black;
+    margin: 10px;
+    padding-left: 10px;
+    background: rgb(164, 241, 255);
+}
+
+.cookie_skill_info{
+    border: 1px solid black;
+    margin: 10px;
+    padding-left: 10px;
+    background: rgb(164, 241, 255);
+}
+
+.cookie_skill_info p{
+    margin-top: -15px;
+}
+
+.cookie_skill_info h4{
+    color: rgb(15, 28, 209);
+}
+
+.cookie_to_use{
+    border: 1px solid black;
+    margin: 10px;
+    padding-left: 10px;
+    background: rgb(164, 241, 255);
+}
+
+.cookie_to_use p{
+    margin-top: -15px;
+}
+
+.skins{
+    border: 1px solid black;
+    margin: 10px;
+    padding-left: 10px;
+    background: rgb(164, 241, 255);
+}
+
+.light{
+    color: rgb(255, 187, 0);
+    font-weight: bold;
+}
+
+.legendary{
+    color: rgb(32, 170, 140);
+    font-weight: bold;
+}
+
+.cooltime{
+    color:blueviolet
+}
+
+.power{
+    color: red;
+}
