@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>아카이빙</h1>
     <div id="another_cookie">
-        <h3>[쿠키 목록 보기]</h3>
+        <h3 style="margin-bottom: 3px;">[쿠키 목록 보기]</h3>
+        <select id="choose_cookie" onchange="changeCookie(this.value)">
+            <optgroup label="LEGENDARY" style="color: rgb(32, 170, 140);">
+                <option value="cookie01">시간지기 쿠키</option>
+                <option value="cookie02">천년나무 쿠키</option>
+                <option value="cookie03">지하명왕 쿠키</option>
+            </optgroup>
+            <!-- <optgroup label="BEAST" style="color: rgb(133, 2, 2);">
+                <option>쉐도우밀크 쿠키</option>
+                <option>필멸의 라자펜드라 쿠키</option>
+            </optgroup> -->
+        </select>
     </div>
 
     <div id="cookie_info">
-        <h2 class="legendary">LEGENDARY 시간지기 쿠키</h2>
-        <div class="cookie_history">
+        <h2 class="legendary">LEGENDARY <span id="cookie_name">시간지기 쿠키</span></h2>
+        <div id="cookie_history">
             <h3 style="color: rgb(15, 28, 209);">쿠키 이야기</h3>
             <p style="margin-top: -15px;">
                 허공이 서걱 잘리며 작은 그림자가 나타나는 순간, 째깍째깍 흘러가던 시게들이 일시에 멈춘다.
@@ -25,7 +37,7 @@
             </p>
         </div>
 
-        <div class="cookie_skill_info">
+        <div id="cookie_skill_info">
             <h3 style="color: rgb(15, 28, 209);">시간선 안정화</h3>
             <p>
                 시간 수습 가위에 올라타 시간선의 확장을 본 후 시간선을 정리해 모든 적에게 피해를 입힌다. 시간지기 쿠키를 제외한 공격력이 가장 높은 적 3종(쿠키 우선)에게 다이얼락을 부여한다.
@@ -82,14 +94,14 @@
             <p>빛의 축복: 스킬 사용 시 10초 동안 자신의 이로운 효과 7.0% 증가, 피해감소 15.0% 증가, 중첩 최대 2개</p>
         </div>
 
-        <div class="skins">
+        <div id="skins">
             <h4>보유한 스킨 목록</h4>
             <ul>
                 <li><p style="margin-top: -15px;"><span class="legendary">종말의 초신성 | 시간지기 쿠키</span></p></li>
             </ul>
         </div>
 
-        <div class="cookie_to_use">
+        <div id="cookie_to_use">
             <h4>세팅</h4>
             <ul>
                 <li><p>킹덤 아레나: <span class="cooltime">6 째깍째깍 초콜릿칩</span>, 피해감소 무시 비스킷</p></li>
