@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>쿠키런: 킹덤 쿠키 정보 아카이브</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,21 +11,22 @@
     <h1>아카이빙</h1>
     <div id="another_cookie">
         <h3 style="margin-bottom: 3px;">[쿠키 목록 보기]</h3>
-        <select id="choose_cookie" onchange="changeCookie(this.value)">
+        <select id="choose_cookie" onchange="changeCookie(this.value), changeCookieGrade(this.value)">
+        <!-- <select id="choose_cookie"> -->
             <optgroup label="LEGENDARY" style="color: rgb(32, 170, 140);">
                 <option value="cookie01">시간지기 쿠키</option>
                 <option value="cookie02">천년나무 쿠키</option>
                 <option value="cookie03">지하명왕 쿠키</option>
             </optgroup>
-            <!-- <optgroup label="BEAST" style="color: rgb(133, 2, 2);">
-                <option>쉐도우밀크 쿠키</option>
-                <option>필멸의 라자펜드라 쿠키</option>
-            </optgroup> -->
+            <optgroup label="BEAST" style="color: rgb(133, 2, 2);">
+                <option value="cookie04">쉐도우밀크 쿠키</option>
+                <option value="cookie05">필멸의 라자펜드라 쿠키</option>
+            </optgroup>
         </select>
     </div>
 
     <div id="cookie_info">
-        <h2 class="legendary">LEGENDARY <span id="cookie_name">시간지기 쿠키</span></h2>
+        <h2>LEGENDARY <span id="cookie_name">시간지기 쿠키</span></h2>
         <div id="cookie_history">
             <h3 style="color: rgb(15, 28, 209);">쿠키 이야기</h3>
             <p style="margin-top: -15px;">

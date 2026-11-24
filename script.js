@@ -1,3 +1,12 @@
+let cookie = document.querySelector("#choose_cookie");
+let attri = document.getElementsById("cookie_name");
+let color = attri.getAttribute("style");
+
+// cookie.addEventListener("change", function(){
+//     var ckName = document.getElementById("choose_cookie").value;
+//     cookieName.textContent = ckName;
+// });
+
 function changeCookie(value){
     let cookieName = document.getElementById("cookie_name");
     if(value == "cookie01"){
@@ -13,5 +22,9 @@ function changeCookie(value){
     else if(value == "cookie03"){
         cookieName.innerHTML = "지하명왕 쿠키";
     }
-}
 
+    else if(value == "cookie04"){
+        cookieName.innerHTML = "쉐도우밀크 쿠키";
+        attri.setAttribute("style", "color: rgb(133, 2, 2);");
+    }
+}
